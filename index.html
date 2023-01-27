@@ -18,10 +18,36 @@
 
     <form>
         <h2>Inserir nova imagem</h2>
-            <input type='url' required placeholder='Endereço de Imagem'/>
+            <input type='url' id="endereco-image-nova" required placeholder='Endereço de Imagem'/>
             <button  id='enviar' type='submit'>Enviar</button>
             <button  id='cancelar' type='reset'>Cancelar</button>
     </form>
+    <ul>
+        <li>
+            <img src='./images_M9/images/foto1.jpg' alt="pintura de gato"/>
+            <div class="overlay-image-link">
+                <a href="./images_M9/images/foto1.jpg" tittle='ver imagem em tamanho real' target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src='./images_M9/images/foto2.jpg' alt="pintura passaro"/>
+            <div class="overlay-image-link">
+                <a href="./images_M9/images/foto2.jpg" tittle='ver imagem em tamanho real' target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src='./images_M9/images/foto3.jpg' alt="pintura de cachorros"/>
+            <div class="overlay-image-link">
+                <a href="./images_M9/images/foto3.jpg" tittle='ver imagem em tamanho real' target="_blank">
+                    ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./script.js"></script>
 </body>
