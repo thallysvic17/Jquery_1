@@ -42,4 +42,9 @@ body{
 
 .riscado {
     text-decoration: line-through;
+    
+}
+
+li{
+    cursor: pointer;
 }
