@@ -3,13 +3,12 @@ $(document).ready(function(){
         e.preventDefault();
 
         const listatarefa =$('#tarefas').val();
-        const novoitem = $('<li><li/>');
+        const novoitem = $('<li></li>');
         $(`<li>${listatarefa}</li>`).appendTo(novoitem);
         $(novoitem).appendTo("ul");
         $('li').click(function(){
             $(this).addClass('riscado');
-        });    
+        }); 
+        $('#tarefas').val('');   
     });
-    $('#tarefa').val('');
-
 });
