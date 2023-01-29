@@ -2,110 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
-header{
+body{
+    background-color: #fff
+}
+
+.container{
+    margin: auto;
     display: flex;
-    background-color: #40407a;
+    width: 50vh;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
-    padding: 16px 0; 
-    border-bottom: 10px solid #2c2c54;
-    color: #fff;
-    text-transform: uppercase;
-    font-style: italic;
-}
+    flex-direction: column;
+    gap: 20px;
+}  
 
-header button{
-    background-color: green;
+#formulario input{
     border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 16px;
+    outline: none;
+    border-bottom: 1px solid #17c0eb;
+    margin-right: 8px;
 }
 
-header button:hover{
-    background-color: rgb(6, 206, 6);
-}
-
-form{
-    background-color:#c8d6e5;
-    padding: 24px 0;
-    text-align: center;
-    display: none;
-}
-
-form h2{
-    margin-bottom: 16px;
-}
-
-input, button{
-    padding: 8px;
-}
-
-
-#enviar{
-    background-color: green;
+#formulario button{
+    background-color:#17c0eb;
     border: none;
-    color: #fff;
-    border-radius: 4px;
-    margin-left: 10px;
-    margin-right: 10px;   
+    border-radius: 2px;
+    padding: 5px 8px;
     cursor: pointer;
+    box-shadow: 3px 3px 4px #4b4b4b;
 }
 
-#enviar:hover{
-    background-color:  rgb(6, 206, 6);
-}
+#formulario button:hover{
+    background-color: #67e6dc;
+    transform: scale(1.1);
+}   
 
-#cancelar{
-    background-color:  rgb(252, 77, 77);
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    margin-left: 8px;
-    cursor: pointer;
-}
-
-#cancelar:hover{
-    background-color: red;
-}
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul li{
-    max-width: 25%;  
-    list-style: none; 
-    position: relative;
-    max-height: 280px;
-    overflow-y: hidden;
-
-}
-
-ul li img{
-    width: 100%;
-}
-
-.overlay-image-link{
-    padding: 16px;
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: all ease .5s;
-}
-
-.overlay-image-link a{
-    color: #fff;
-    text-decoration: none;
-
-}
-
-ul li:hover .overlay-image-link{
-    opacity: 1;
+.riscado {
+    text-decoration: line-through;
 }
