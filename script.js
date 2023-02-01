@@ -7,9 +7,12 @@ $(document).ready(function(){
         $(`<li>${listatarefa}</li>`).appendTo(novoitem);
         $(novoitem).appendTo("ul");
         $('li').click(function(){
-            $(this).addClass('riscado');
-            
-        }); 
+            if($("li").hasClass("riscado")){
+            $(this).removeClass('riscado');
+        }else{
+	$(this).addClass('riscado');
+        }
+}); 
         $('#tarefas').val('');   
     });
 });
