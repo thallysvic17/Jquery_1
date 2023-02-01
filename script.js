@@ -8,6 +8,7 @@ $(document).ready(function(){
         $(novoitem).appendTo("ul");
         $('li').click(function(){
             $(this).addClass('riscado');
+            
         }); 
         $('#tarefas').val('');   
     });
